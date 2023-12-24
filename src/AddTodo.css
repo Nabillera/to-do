@@ -1,0 +1,46 @@
+#add-todo-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-color: #9A9CC2;
+    border-radius: 5px;
+    background-color: #EDEDED;
+    width: 400px;
+    height: 250px;
+    padding: 10px 0 10px 0;
+}
+p{
+    margin: 0;
+    font-size: 20px;
+}
+input{
+    width: 330px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+textarea{
+    width: 330px;
+    max-width: 330px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 35px;
+    padding: 5px;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+#save-button{
+    background-color: rgb(185, 190, 221);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+#save-button:hover{
+    background-color: rgba(185, 190, 221, 0.5);
+}
+
