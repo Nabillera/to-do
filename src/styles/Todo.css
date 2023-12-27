@@ -1,0 +1,28 @@
+#todo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #CCCCFF;
+    border-radius: 10px;
+}
+#todo-text-container{
+    max-width: 80%;
+}
+#title{
+    font-size: 25px
+}
+#description{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+}
+button{
+    height: fit-content;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px 7px 12px;
+}
