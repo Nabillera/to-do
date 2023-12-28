@@ -1,11 +1,15 @@
 import '../styles/Todo.css'
-export function Todo(props){
+export function Todo({title, description, color, index, onDelete}){
     
-    return (<div id="todo-container" style={{backgroundColor: props.color}}>
+    const removeTodo = () => {
+        onDelete(index)
+    }
+
+    return (<div id="todo-container" style={{backgroundColor: color}}>
         <div id="todo-text-container">
-            <p id="title">{props.title}</p>
-            <p id="description">{props.description}</p>
+            <p id="title">{title}</p>
+            <p id="description">{description}</p>
         </div>
-        <button>Delete</button>
+        <button onClick={removeTodo}>Delete</button>
     </div>)
 }

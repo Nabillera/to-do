@@ -15,9 +15,15 @@ export const AddTodo = ({ onSave }) => {
     };
 
     const saveData = () => {
-        onSave({ title, description });
-        setTitle("");
-        setDescription("");
+        if(title === ""){
+            alert("Add a title, please :3")
+        }else if(description === ""){
+            alert("Add a description, please :3")
+        }else{
+            onSave({ title, description });
+            setTitle("");
+            setDescription("");
+        }
     };
 
     return (
